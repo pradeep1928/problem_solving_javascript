@@ -3,6 +3,13 @@
 */
 
 
+/**
+ * The function takes an array of numbers, sorts them, removes duplicates, and returns a new array with
+ * only the "beautiful" numbers (numbers that are either increasing or have a higher number later in
+ * the array).
+ * @param arr - The input array of numbers. In this case, it is [4, 2, 1, 3, 54, 12, 101, 21].
+ * @returns an array of unique numbers sorted in ascending order.
+ */
 function beautiNumber (arr) {
   const sortArr = arr.sort(function (a, b) { return a - b })
   const a = [sortArr[0]]
